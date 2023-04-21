@@ -10,7 +10,7 @@ function Card({ pokemon }) {
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
         width="120"
         height="120"
-        alt="Pokeball"
+        alt={pokemon.name}
       />
       <p className={styles.id}>#{pokemon.id}</p>
       <h3 className={styles.title}>{pokemon.name}</h3>
